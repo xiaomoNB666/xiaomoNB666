@@ -1,0 +1,15 @@
+local ui = loadstring(game:HttpGet"https://pastebin.com/raw/E9PzvbeX")()
+
+local window = ui:new("小魔")
+
+local uuu = window:Tab("主要",'14654173453')
+
+local Section = uuu:section('主要',true) 
+
+Section:NewButton("Tp To Vip Room", "ButtonInfo", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-1881.45361328125, -396.8499755859375, 911.4960327148438)
+end)
+
+Section:NewButton("返回电梯原处", "ButtonInfo", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-1916.3992919921875, -396.74810791015625, 919.82666015625)
+end)
