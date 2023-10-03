@@ -1,7 +1,7 @@
 loadstring(game:HttpGet("https://raw.githubusercontent.com/CX5200/jiankeV3/main/XwX"))()
 local UILib = loadstring(game:HttpGet"https://raw.githubusercontent.com/jiankeQWQ/xiaomo/main/XiaoMoUI")()
 
-local win = UILib:Window("小魔UI ",Color3.fromRGB(102, 255, 153), Enum.KeyCode.F6)
+local win = UILib:Window("疯狂电梯 ",Color3.fromRGB(102, 255, 153), Enum.KeyCode.F6)
 
 local Tab = win:Tab("传送")
 
