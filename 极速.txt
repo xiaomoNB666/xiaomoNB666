@@ -1,16 +1,15 @@
-local ui = loadstring(game:HttpGet"https://pastebin.com/raw/E9PzvbeX")()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/CX5200/jiankeV3/main/XwX"))()
+local UILib = loadstring(game:HttpGet"https://raw.githubusercontent.com/jiankeQWQ/xiaomo/main/XiaoMoUI")()
 
-local window = ui:new("小魔")
+local win = UILib:Window("极速传奇 ",Color3.fromRGB(102, 255, 153), Enum.KeyCode.F6)
 
-local uuu = window:Tab("主要",'14654173453')
+local Tab = win:Tab("功能")
 
-local Section = uuu:section('主要',true) 
-
-Section:Button("刷经验", function()
+Tab:Toggle("刷经验",false, function(v)
      loadstring(game:HttpGet("https://pastebin.com/raw/9KWQXasx"))()
 end)
 
-Section:Button("自动重生", function()
+Tab:Toggle("自动重生",false, function(v)
     while wait(0.1) do 
 local A_1 = "rebirthRequest"
 local Event = game:GetService("ReplicatedStorage").rEvents.rebirthEvent
@@ -18,18 +17,18 @@ Event:FireServer(A_1)
     end
 end)
 
-Section:Button("传送至出生岛", function()
+Tab:Button("出生岛", function()
 	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-9682.98828125, 58.87917709350586, 3099.033935546875)      
 end)
 
-Section:Button("白雪城", function()
+Tab:Button("白雪城", function()
 	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-9676.138671875, 58.87917709350586, 3782.69384765625)   
 end)
 
-Section:Button("熔岩城", function()
+Tab:Button("熔岩城", function()
 	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-11054.96875, 216.83917236328125, 4898.62841796875)       
 end)
 
-Section:Button("传奇公路", function()
+Tab:Button("传奇公路", function()
     game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-13098.87109375, 216.83917236328125, 5907.6279296875)  
 end)
