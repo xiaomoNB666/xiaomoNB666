@@ -1,15 +1,14 @@
-local ui = loadstring(game:HttpGet"https://pastebin.com/raw/E9PzvbeX")()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/CX5200/jiankeV3/main/XwX"))()
+local UILib = loadstring(game:HttpGet"https://raw.githubusercontent.com/jiankeQWQ/xiaomo/main/XiaoMoUI")()
 
-local window = ui:new("疯狂电梯")
+local win = UILib:Window("小魔UI ",Color3.fromRGB(102, 255, 153), Enum.KeyCode.F6)
 
-local uuu = window:Tab("主要",'14654173453')
+local Tab = win:Tab("传送")
 
-local Section = uuu:section('主要',true) 
-
-Section:Button("传送VIP房间", function()
+Tab:Button("传送VIP房间", function()
     game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-1881.45361328125, -396.8499755859375, 911.4960327148438)
 end)
 
-Section:Button("返回原处", function()
+Tab:Button("返回原处", function()
     game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-1916.3992919921875, -396.74810791015625, 919.82666015625)
 end)
