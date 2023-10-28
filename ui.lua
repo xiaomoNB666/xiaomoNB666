@@ -74,10 +74,9 @@ AZY["8"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
 AZY["8"]["Size"] = UDim2.new(0.8902860283851624, 0, 0.6482642889022827, 0);
 AZY["8"]["Text"] = [[你好 User,
 
-制作者龙叔:“第一次做不会弄”
-好兄弟:微山，初夏
-支持全部脚本
-支持保存脚本
+制作者小魔:“我这个是仿的”
+代码是从QQ上找的
+师傅：Taylor
 ]];
 AZY["8"]["Name"] = [[Text]];
 AZY["8"]["BackgroundTransparency"] = 1;
@@ -4130,10 +4129,9 @@ local function C_9()
 	local welcomeMessage = string.format([[
 欢迎 %s,
 	
-制作者龙叔:“感谢宙斯的ui”
-好兄弟:微山，初夏
-支持全部脚本
-部分bug等以后修
+制作者小魔:“我这个只是仿的”
+代码是从QQ上拿的
+请不要喷我
 感谢你的使用
 	]], playerName)
 
@@ -4504,7 +4502,7 @@ local function C_54()
 	end)
 end;
 task.spawn(C_54);
--- StarterGui.ArceusXV3.MainUI.MainFrame.Tabs.Home.HaxPage.Scripts.Fly.LocalScript
+-- StarterGui.ArceusXV3.MainUI.MainFrame.Tabs.Home.HaxPage.Scripts.快速执行魔脚本.LocalScript
 local function C_57()
 	local script = AZY["57"];
 	script.Parent.MouseButton1Click:Connect(function()
