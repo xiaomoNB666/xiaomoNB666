@@ -75,7 +75,7 @@ AZY["8"]["Size"] = UDim2.new(0.8902860283851624, 0, 0.6482642889022827, 0);
 AZY["8"]["Text"] = [[你好 User,
 
 制作者小魔:“我这个是仿的”
-代码是从QQ上找的
+朋友:水下世界作者  道庭  天使
 师傅：Taylor
 ]];
 AZY["8"]["Name"] = [[Text]];
@@ -690,7 +690,7 @@ AZY["5b"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]
 AZY["5b"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
 AZY["5b"]["Size"] = UDim2.new(0.2588447332382202, 0, 0.0958060473203659, 0);
 AZY["5b"]["Name"] = [[PwnHub]];
-AZY["5b"]["Text"] = [[Pwner Hub]];
+AZY["5b"]["Text"] = [[魔脚本]];
 AZY["5b"]["Position"] = UDim2.new(0.04600000008940697, 0, 0.8209999799728394, 0);
 
 -- StarterGui.ArceusXV3.MainUI.MainFrame.Tabs.Home.HaxPage.Scripts.PwnHub.UICorner
@@ -4130,8 +4130,8 @@ local function C_9()
 欢迎 %s,
 	
 制作者小魔:“我这个只是仿的”
-代码是从QQ上拿的
-请不要喷我
+朋友:水下世界作者  道庭  天使
+师傅:Taylor
 感谢你的使用
 	]], playerName)
 
@@ -4522,7 +4522,7 @@ task.spawn(C_5a);
 local function C_5d()
 	local script = AZY["5d"];
 	script.Parent.MouseButton1Click:Connect(function()
-		loadstring(game:HttpGet(("https://raw.githubusercontent.com/Maikderninja/Maikderninja/main/PWNERHUB.lua"), true))()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/xiaomoNB666/xiaomoNB666/main/%E8%87%AA%E7%84%B6.txt"))()
 	end)
 end;
 task.spawn(C_5d);
