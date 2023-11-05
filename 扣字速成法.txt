@@ -1,31 +1,15 @@
-getgenv().Name = "小魔用户保护"
+local goDown
+mo = addButton("卢本伟", function()
+	local char = speaker.Character
+	if char then
+   if game.Workspace:FindFirstChild("kkaaccnnbb") then
+    game.Workspace:FindFirstChild("kkaaccnnbb"):Remove()	
+   end	
+    local kkaaccnnbb = Instance.new("Sound")
+    kkaaccnnbb.SoundId = "rbxassetid://7433940301"
+    kkaaccnnbb.Parent = game.Workspace
 
-local Plr = game.Players.LocalPlayer
-for Index, Value in next, game:GetDescendants() do 
-    if Value.ClassName == "小魔用户保护" then 
-        local has = string.find(Value.Text,Plr.Name) 
-        if has then 
-            local str = Value.Text:gsub(Plr.Name,name)
-            Value.Text = str 
-        end
-        Value:GetPropertyChangedSignal("Text"):Connect(function()
-            local str = Value.Text:gsub(Plr.Name,name)
-            Value.Text = str 
-        end)
-    end
-end
-
-game.DescendantAdded:Connect(function(Value)
-    if Value.ClassName == "小魔用户保护" then 
-        local has = string.find(Value.Text,Plr.Name)
-        Value:GetPropertyChangedSignal("Text"):Connect(function()
-            local str = Value.Text:gsub(Plr.Name,name)
-            Value.Text = str 
-        end)
-        if has then 
-            local str = Value.Text:gsub(Plr.Name,name)
-            Value.Text = str 
-        end
-        
-    end
+  
+    kkaaccnnbb:Play()
+	end
 end)
