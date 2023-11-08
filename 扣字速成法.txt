@@ -121,16 +121,16 @@ function library.new(library, name,theme)
           v:Destroy()
         end
       end
-if theme == 'dark' then
-    MainColor = Color3.fromRGB(25, 25, 25)
-    Background = Color3.fromRGB(25, 25, 25)
-    zyColor= Color3.fromRGB(25, 25, 25)
-    beijingColor = Color3.fromRGB(25, 25, 25)
+if theme == 'qing' then
+    MainColor = Color3.fromRGB(29, 45, 70)
+    Background = Color3.fromRGB(17, 31, 50)
+    zyColor= Color3.fromRGB(29, 45, 70)
+    beijingColor = Color3.fromRGB(29, 45, 70)
     else
-    MainColor = Color3.fromRGB(25, 25, 25)
-    Background = Color3.fromRGB(25, 25, 25)
-    zyColor= Color3.fromRGB(30, 30, 30)
-    beijingColor = Color3.fromRGB(255, 255, 255)
+    MainColor = Color3.fromRGB(0, 51, 179)
+    Background = Color3.fromRGB(0, 51, 179)
+    zyColor= Color3.fromRGB(0, 51, 179)
+    beijingColor = Color3.fromRGB(0, 51, 179)
 end
       local dogent = Instance.new("ScreenGui")
       local Main = Instance.new("Frame")
@@ -407,7 +407,7 @@ end
       end)
       Open.Name = "Open"
       Open.Parent = dogent
-      Open.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+      Open.BackgroundColor3 = Color3.fromRGB(29, 45, 70)
       Open.Position = UDim2.new(0.00829315186, 0, 0.31107837, 0)
       Open.Size = UDim2.new(0, 61, 0, 32)
       Open.Font = Enum.Font.SourceSans
@@ -501,7 +501,7 @@ end
     
           Section.Name = "Section"
           Section.Parent = Tab
-          Section.BackgroundColor3 = zyColor
+          Section.BackgroundColor3 = Color3.fromRGB(102, 190, 193)
           Section.BackgroundTransparency = 1.000
           Section.BorderSizePixel = 0
           Section.ClipsDescendants = true
@@ -693,7 +693,7 @@ end
             
             ToggleSwitch.Name = "ToggleSwitch"
             ToggleSwitch.Parent = ToggleDisable
-            ToggleSwitch.BackgroundColor3 = beijingColor
+            ToggleSwitch.BackgroundColor3 = Color3.fromRGB(15, 27, 44)
             ToggleSwitch.Size = UDim2.new(0, 24, 0, 22)
             
             ToggleSwitchC.CornerRadius = UDim.new(0, 6)
@@ -708,7 +708,7 @@ end
               SetState = function(self, state)
                 if state == nil then state = not library.flags[flag] end
                 if library.flags[flag] == state then return end
-                services.TweenService:Create(ToggleSwitch, TweenInfo.new(0.2), {Position = UDim2.new(0, (state and ToggleSwitch.Size.X.Offset / 2 or 0), 0, 0), BackgroundColor3 = (state and Color3.fromRGB(255, 255, 255) or beijingColor)}):Play()
+                services.TweenService:Create(ToggleSwitch, TweenInfo.new(0.2), {Position = UDim2.new(0, (state and ToggleSwitch.Size.X.Offset / 2 or 0), 0, 0), BackgroundColor3 = (state and Color3.fromRGB(255, 255, 255) or Color3.fromRGB(15, 27, 44))}):Play()
                 library.flags[flag] = state
                 callback(state)
               end,
@@ -1352,5 +1352,3 @@ end
       end
       return window
     end
-    
-    
